@@ -1,21 +1,7 @@
 $(document).ready(function() {
     
-    //расписания туров
-    $('.main_nav nav ul li:eq(1) a').on('click', function(event) {
-        event.preventDefault();
-        $('.overlay').fadeIn('slow');
-        $('.modal').slideDown('slow');
-    });
-
-    //
-    $('.main_btna').on('click', function(event) {
-        event.preventDefault();
-        $('.overlay').fadeIn('slow');
-        $('.modal').slideDown('slow');
-    });
-
-    //
-    $('.main_btn:has(span)').on('click', function(event) {
+    //расписания туров, выбрать тур, получить консультацию
+    $('.main_nav nav ul li:eq(1) a, .main_btna, .main_btn:has(span)').on('click', function(event) {
         event.preventDefault();
         $('.overlay').fadeIn('slow');
         $('.modal').slideDown('slow');
